@@ -1,0 +1,50 @@
+body{
+    background: black;
+}
+
+.gallaryBox{
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-top: 200px;
+    display: flex;
+}
+.images{
+    margin-left: 20px;
+    max-width: 70%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 5px;
+    display: flex;
+}
+
+.images img{
+    margin-right: 10px;
+    display: flex;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+    transform-origin: center;
+    padding: 7px;
+}
+
+
+.gallaryBox .images::-webkit-scrollbar{
+    display: none;
+}
+
+#back{
+    width: max-content;
+    margin-top: 140px;
+    margin-left: 150px;
+}
+
+#forth{
+    width: 50px;
+    max-height: 50px;
+    margin-top: 140px;
+    margin-left: 25px;
+}
+
+.images img:hover {
+    filter: none;
+    transform: scale(1.2);
+}
